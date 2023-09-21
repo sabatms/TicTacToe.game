@@ -3,12 +3,12 @@
           padding: 0;
 }
 
-body{
+body {
           font-family: Arial, Helvetica, sans-serif;
-          background-color: rgb(119, 119, 205);
+          background-color: rgb(1, 90, 62);
 }
 
-.container{
+.container {
           display: flex;
           justify-content: center;
           flex-direction: column;
@@ -16,15 +16,44 @@ body{
           height: 700px;
 }
 
-.gameField{
+.gameField {
           width: 300px;
           height: 300px;
 }
 
-.cells{
+.cells {
           display: flex;
 }
 
-.cell{
-          
+.cell {
+         font-size: 80px;
+         display: flex;
+         justify-content: center; 
+         align-items: center;
+         width: 100px;
+         height: 100px;
+         border: 1px solid white;
+}
+
+.score {
+         display: flex;
+         justify-content:space-between;
+         width: 300px;
+         font-size: 20px;
+}
+
+.restart {
+          margin-top: 10px;
+          background-color: white;
+          border: 1px solid black;
+          padding: 10px;
+          font-size: 15px;
+          cursor: pointer;
+          transition: all ease 0.5s;
+}
+
+.restart:hover {
+          background-color: rgb(214, 77, 62);
+          color: white;
+          border: 1px solid white;
 }
